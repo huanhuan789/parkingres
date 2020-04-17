@@ -1,0 +1,17 @@
+<!--pages/mywallet/mywallet.wxml-->
+<cpn-topbox />
+<view class="mywal_header">
+	<view class="header">充值<i class="iconfont icon-tiyanjin"></i>中心</view>
+	<view class="mywal_balancebox ">
+		<view class="mywal_balance_title">
+			<i class="iconfont icon-iconset0292"></i>
+			<text>钱包账户</text>
+		</view>
+		<view class="mywal_balance_con">
+			<text>账户余额(元):</text>
+			<text>{{money}}</text>
+		</view>
+	</view>
+	<button class="mywal_btn">充值</button>
+</view>
+

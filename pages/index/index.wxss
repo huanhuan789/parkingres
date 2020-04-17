@@ -1,0 +1,39 @@
+/**index.wxss**/
+.indexbox{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+ align-items: center;
+}
+.loginwelcome{
+  font-size: 60rpx;
+  letter-spacing: 20rpx;
+
+}
+.logintitle{
+  font-size: 70rpx;
+  font-weight:lighter;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500rpx;
+  height: 500rpx;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.indexbtn{
+
+  font-size: 40rpx;
+}

@@ -1,0 +1,64 @@
+<!--pages/parkingres/parkingres.wxml-->
+<!-- 如果没有预约信息,显示预约页面，
+如果收到用户预约信息并支付费用则页面显示预约成功页面 并开始计时 ；记录时间,如果用户在预约时间内未进入到停车场,
+则重新恢复预约页面， -->
+<view class="parking">
+	<!-- 预约车位文本 -->
+	<view class="parking_con_car">
+		<text class="parking_title">请选择</text>
+		<text class="parking_car">预约车位</text>
+		<view class="allcar">
+		 <text>总车位:{{cars.length}}</text> 
+		 <text>剩余车位:{{restcar}}</text> 
+		</view>
+
+		<!-- 预约车位的选框 -->
+		<view class="parking_concar_radio">
+			<radio-group class="radio-group" bindchange="radioChangecar">
+				<label class="radio {{item.checked ? 'active' : ''}}" wx:for="{{cars}}" wx:key="name">
+					<radio value="{{item.value}}" checked="{{item.checked}}" />
+					<!-- 每个小选框 -->
+					<view class="car_itemvalue">
+						<!-- 判断是否选中 -->
+						<!-- 选中显示红色 -->
+						<block wx:if="{{item.checked}}">
+						<view class="img_box">
+							<image class="radio-icon" src="../../img/redcar.png"></image>
+						</view>
+							<text class="carradio_txt">已选</text>
+						</block>
+						<!--否则显示绿色  -->
+						<block wx:else>
+						<view class="img_box">
+						<image class="radio-icon" src="../../img/tingchewei.png"></image>
+						</view>
+							<text class="carradio_txt">{{item.value}}</text>
+						</block>
+
+					</view>
+				</label>
+			</radio-group>
+		</view>
+
+	</view>
+	<!-- 预约时间文本-->
+	<view class="parking_con_time">
+		<view class="parking_contime_txt">
+			<text class="parking_title">请选择</text>
+			<text class="parking_time">预约时间</text>
+		</view>
+		<!-- 预约时间的选框 -->
+		<view class="parking_contime_radio">
+			<radio-group class="radio-group" bindchange="radioChangetime">
+				<radio class="radiotime" wx:for="{{times}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+					<text>{{item.value}}</text>
+				</radio>
+	
+			
+			</radio-group>
+		</view>
+
+	</view>
+
+	<button bindtap="prakingsum" class="prakinbtn" plain>确认</button>
+</view>

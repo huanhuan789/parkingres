@@ -1,0 +1,65 @@
+.parking_con_car,.parking_con_time{
+margin: 10px;
+}
+.allcar{
+  display: flex;
+}
+.allcar text{
+  flex: 1;
+}
+
+.parking_title{
+  font-size: 36rpx;
+}
+.parking_car,.parking_time{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.radio{
+  position:relative;
+}
+.radio radio{
+  position:absolute;
+  opacity: 0;
+}
+.car_itemvalue{
+  display: inline-block;
+  position: relative;
+  margin:30rpx;
+  width:150rpx;
+  height: 150rpx;
+  border: 1px solid gainsboro;
+  text-align: center;
+}
+.car_itemvalue .img_box{
+  position: relative;
+  width:70rpx;
+  height: 70rpx;
+  margin: 10rpx auto;
+}
+.radio-icon{
+  position: relative;
+  display:block;
+  width:70rpx;
+  height: 70rpx;
+  margin: 0 auto;
+}
+.radio.active .radio-icon{
+  position: relative;
+  display:block;
+  margin: 0 auto;
+  width:70rpx;
+  height: 70rpx;
+}
+.parking_contime_radio .radio-group{
+  height: 150rpx;
+  /* background-color: gainsboro; */
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+
+}
+
+.parking_contime_radio .radio-group .radiotime{
+  flex: 1;
+}

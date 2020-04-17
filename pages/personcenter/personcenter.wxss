@@ -1,0 +1,40 @@
+/* pages/personcenter/personcenter.wxss */
+.personheader{
+  padding: 30rpx;
+}
+.userinfo-avatar{
+  width: 200rpx;
+  height:200rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  font-size: 70rpx;
+}
+.person_list{
+  /* background-color: gainsboro; */
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+
+}
+
+.person_list button{
+  background-color: #fff;
+  position: relative;
+}
+.person_list image{
+  width: 100rpx;
+  height: 90rpx;
+  position: absolute;
+  left: 20rpx;
+}
+button text{
+  display: inline-block;
+  font-size: 50rpx;
+  font-weight: lighter;
+  margin-left: 60rpx;
+  position:relative;
+ top: 25rpx;
+ right: 50rpx;
+}

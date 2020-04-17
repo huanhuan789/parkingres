@@ -1,0 +1,16 @@
+<!--pages/binding/bingding.wxml-->
+<!-- 如果已绑定车牌号码(怎么判断已绑定),则跳过这个页面直接绑定 -->
+<view class="container">
+	<view class="bdheader">
+		<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+		<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	</view>
+	<view class="bdinput">
+		<text>车牌号码:</text>
+		<input class="bdinputtext" placeholder="请输入车牌号码" maxlength="7"></input>
+	</view>
+
+	<button class="bindbtn" bindtap="bindmessa">绑定车牌号码</button>
+
+	
+</view>

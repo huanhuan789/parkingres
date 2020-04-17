@@ -1,0 +1,40 @@
+/* pages/changemess/changemess.wxss */
+.container{
+  margin-top: 10rpx;
+  height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.bdinput{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600rpx;
+  height: 250rpx;
+  border: 2px solid gray;
+}
+.bdinput text{
+  font-size: 60rpx;
+  letter-spacing: 10rpx;
+  color:#a0a1fe ;
+}
+.bdinputtext{
+  border: 1px solid gainsboro;
+width: 400rpx;
+height: 90rpx;
+font-size:60rpx;
+}
+.input-placeholder{
+font-size: 40rpx;
+color: gainsboro;
+}
+.bindbtn{
+  background-color: gainsboro;
+  font-size: 45rpx;
+
+}

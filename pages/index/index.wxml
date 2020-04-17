@@ -1,0 +1,19 @@
+<!--index.wxml-->
+
+<view class="indexbox">
+	<view class="loginwelcome">欢迎使用</view>
+	<view class="logintitle">停车管理微信小程序</view>
+	<view class="userinfo">
+		<block wx:if="{{!hasUserInfo && canIUse}}">
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="/img/touxiang.png" mode="cover"></image>
+			<text class="userinfo-nickname">微信昵称</text>
+			<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+		</block>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+			<button class="indexbtn" bindtap="bindgoin">进入停车之旅</button>
+		</block>
+	</view>
+
+</view>

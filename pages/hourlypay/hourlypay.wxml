@@ -1,0 +1,17 @@
+<!--pages/hourlypay/hourlypay.wxml-->
+
+<view class="hourlypay_con">
+<text class="hourtxt1">您已预约成功</text>
+<text class="currTime">当前占位时间:{{timecount}}</text>
+<text class="totalcons">应支付金额:{{cost}}</text>
+<text class="zhuyi">注:车出库后自动续费,请保证余额充足</text>
+</view>
+<button class="enter" bindtap="enter">入位</button>
+<button class="outer" bindtap="outer">出位</button>
+<button class="aaa" bindtap="start">开始</button>
+<button class="aaa" bindtap="stop">暂停</button>
+<button class="aaa" bindtap="Reset">停止</button>
+
+
+
+

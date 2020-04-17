@@ -1,0 +1,19 @@
+/* pages/hourlypay/hourlypay.wxss */
+.hourlypay_con{
+  display: flex;
+  /*视口单位vw — 1vw 等于视口宽度的 1% ;vh — 1vh 等于视口高度的 1% */
+  height:90vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.hourlypay_con .hourtxt1{
+  font-size: 100rpx;
+}
+.hourlypay_con .currTime{
+  font-size: 50rpx;
+}
+.hourlypay_con .totalcons{
+  font-size: 70rpx;
+  font-weight: bold;
+}

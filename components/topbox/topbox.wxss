@@ -1,0 +1,5 @@
+/* components/topbox.wxss */
+.compontop{
+  height: 130rpx;
+  background-color: #a0a1fe;
+}
